@@ -3,27 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121225852476811F0063FD32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 121225842476811F0063FD32 /* GoogleService-Info.plist */; };
+		121F3147247D2A0600DBA077 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F3146247D2A0600DBA077 /* ApiService.swift */; };
+		121F3149247D2B4C00DBA077 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F3148247D2B4C00DBA077 /* Dog.swift */; };
+		121F314B247D2B6600DBA077 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F314A247D2B6600DBA077 /* Cat.swift */; };
+		1225DF76247189A800B72127 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1225DF75247189A800B72127 /* MainViewController.swift */; };
+		1225DF782471927200B72127 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1225DF772471927200B72127 /* ListViewController.swift */; };
+		1225DF7A2471928A00B72127 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1225DF792471928A00B72127 /* DetailViewController.swift */; };
+		1225DF7C2471940100B72127 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1225DF7B2471940100B72127 /* ListViewCell.swift */; };
 		12C28CB2246FB03900DF378F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C28CB1246FB03900DF378F /* AppDelegate.swift */; };
 		12C28CB4246FB03900DF378F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C28CB3246FB03900DF378F /* SceneDelegate.swift */; };
-		12C28CB6246FB03900DF378F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C28CB5246FB03900DF378F /* ViewController.swift */; };
 		12C28CB9246FB03900DF378F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C28CB7246FB03900DF378F /* Main.storyboard */; };
 		12C28CBB246FB03C00DF378F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C28CBA246FB03C00DF378F /* Assets.xcassets */; };
 		12C28CBE246FB03C00DF378F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C28CBC246FB03C00DF378F /* LaunchScreen.storyboard */; };
+		9E52062A18328A4B25FD7FB1 /* Pods_cat_and_dog_encyclopedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BACAD950E2476BB5D4CC07 /* Pods_cat_and_dog_encyclopedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		121225842476811F0063FD32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		121F3146247D2A0600DBA077 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		121F3148247D2B4C00DBA077 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		121F314A247D2B6600DBA077 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		1225DF75247189A800B72127 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1225DF772471927200B72127 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		1225DF792471928A00B72127 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1225DF7B2471940100B72127 /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
 		12C28CAE246FB03900DF378F /* cat-and-dog-encyclopedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cat-and-dog-encyclopedia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C28CB1246FB03900DF378F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12C28CB3246FB03900DF378F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		12C28CB5246FB03900DF378F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		12C28CB8246FB03900DF378F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12C28CBA246FB03C00DF378F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12C28CBD246FB03C00DF378F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12C28CBF246FB03C00DF378F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BACAD950E2476BB5D4CC07 /* Pods_cat_and_dog_encyclopedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cat_and_dog_encyclopedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8806DA6BEE644ADC0C42C8C /* Pods-cat-and-dog-encyclopedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cat-and-dog-encyclopedia.release.xcconfig"; path = "Target Support Files/Pods-cat-and-dog-encyclopedia/Pods-cat-and-dog-encyclopedia.release.xcconfig"; sourceTree = "<group>"; };
+		EB3EFC6ED7B97ABE5D3D8D58 /* Pods-cat-and-dog-encyclopedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cat-and-dog-encyclopedia.debug.xcconfig"; path = "Target Support Files/Pods-cat-and-dog-encyclopedia/Pods-cat-and-dog-encyclopedia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E52062A18328A4B25FD7FB1 /* Pods_cat_and_dog_encyclopedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +61,8 @@
 			children = (
 				12C28CB0246FB03900DF378F /* cat-and-dog-encyclopedia */,
 				12C28CAF246FB03900DF378F /* Products */,
+				EDF4E477867B9B13A60D0CF2 /* Pods */,
+				67FB0B139B0606C19B23BA7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +77,71 @@
 		12C28CB0246FB03900DF378F /* cat-and-dog-encyclopedia */ = {
 			isa = PBXGroup;
 			children = (
+				12C28CC8246FB0A400DF378F /* service */,
+				12C28CC7246FB09B00DF378F /* model */,
+				12C28CC6246FB09200DF378F /* controller */,
+				12C28CC5246FB07300DF378F /* view */,
 				12C28CB1246FB03900DF378F /* AppDelegate.swift */,
+				121225842476811F0063FD32 /* GoogleService-Info.plist */,
 				12C28CB3246FB03900DF378F /* SceneDelegate.swift */,
-				12C28CB5246FB03900DF378F /* ViewController.swift */,
-				12C28CB7246FB03900DF378F /* Main.storyboard */,
 				12C28CBA246FB03C00DF378F /* Assets.xcassets */,
-				12C28CBC246FB03C00DF378F /* LaunchScreen.storyboard */,
 				12C28CBF246FB03C00DF378F /* Info.plist */,
 			);
 			path = "cat-and-dog-encyclopedia";
+			sourceTree = "<group>";
+		};
+		12C28CC5246FB07300DF378F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				12C28CBC246FB03C00DF378F /* LaunchScreen.storyboard */,
+				12C28CB7246FB03900DF378F /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		12C28CC6246FB09200DF378F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				1225DF75247189A800B72127 /* MainViewController.swift */,
+				1225DF772471927200B72127 /* ListViewController.swift */,
+				1225DF792471928A00B72127 /* DetailViewController.swift */,
+				1225DF7B2471940100B72127 /* ListViewCell.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		12C28CC7246FB09B00DF378F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				121F3148247D2B4C00DBA077 /* Dog.swift */,
+				121F314A247D2B6600DBA077 /* Cat.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		12C28CC8246FB0A400DF378F /* service */ = {
+			isa = PBXGroup;
+			children = (
+				121F3146247D2A0600DBA077 /* ApiService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		67FB0B139B0606C19B23BA7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84BACAD950E2476BB5D4CC07 /* Pods_cat_and_dog_encyclopedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDF4E477867B9B13A60D0CF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB3EFC6ED7B97ABE5D3D8D58 /* Pods-cat-and-dog-encyclopedia.debug.xcconfig */,
+				E8806DA6BEE644ADC0C42C8C /* Pods-cat-and-dog-encyclopedia.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12C28CC2246FB03C00DF378F /* Build configuration list for PBXNativeTarget "cat-and-dog-encyclopedia" */;
 			buildPhases = (
+				3D338DF6D5D74EF077183CA3 /* [CP] Check Pods Manifest.lock */,
 				12C28CAA246FB03900DF378F /* Sources */,
 				12C28CAB246FB03900DF378F /* Frameworks */,
 				12C28CAC246FB03900DF378F /* Resources */,
+				134849D84F57EE9FC0D9DC4A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12C28CBE246FB03C00DF378F /* LaunchScreen.storyboard in Resources */,
+				121225852476811F0063FD32 /* GoogleService-Info.plist in Resources */,
 				12C28CBB246FB03C00DF378F /* Assets.xcassets in Resources */,
 				12C28CB9246FB03900DF378F /* Main.storyboard in Resources */,
 			);
@@ -133,13 +213,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		134849D84F57EE9FC0D9DC4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cat-and-dog-encyclopedia/Pods-cat-and-dog-encyclopedia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cat-and-dog-encyclopedia/Pods-cat-and-dog-encyclopedia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cat-and-dog-encyclopedia/Pods-cat-and-dog-encyclopedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D338DF6D5D74EF077183CA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cat-and-dog-encyclopedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		12C28CAA246FB03900DF378F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C28CB6246FB03900DF378F /* ViewController.swift in Sources */,
+				1225DF76247189A800B72127 /* MainViewController.swift in Sources */,
 				12C28CB2246FB03900DF378F /* AppDelegate.swift in Sources */,
+				1225DF7A2471928A00B72127 /* DetailViewController.swift in Sources */,
+				1225DF782471927200B72127 /* ListViewController.swift in Sources */,
+				1225DF7C2471940100B72127 /* ListViewCell.swift in Sources */,
+				121F314B247D2B6600DBA077 /* Cat.swift in Sources */,
+				121F3147247D2A0600DBA077 /* ApiService.swift in Sources */,
+				121F3149247D2B4C00DBA077 /* Dog.swift in Sources */,
 				12C28CB4246FB03900DF378F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +410,7 @@
 		};
 		12C28CC3246FB03C00DF378F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB3EFC6ED7B97ABE5D3D8D58 /* Pods-cat-and-dog-encyclopedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +428,7 @@
 		};
 		12C28CC4246FB03C00DF378F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8806DA6BEE644ADC0C42C8C /* Pods-cat-and-dog-encyclopedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

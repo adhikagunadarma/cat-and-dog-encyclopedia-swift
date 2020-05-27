@@ -1,0 +1,6 @@
+framework module Pods_cat_and_dog_encyclopedia {
+  umbrella header "Pods-cat-and-dog-encyclopedia-umbrella.h"
+
+  export *
+  module * { export * }
+}
