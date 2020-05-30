@@ -11,5 +11,6 @@ target 'cat-and-dog-encyclopedia' do
   pod 'FirebaseFirestoreSwift'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'CodableFirebase'
 
 end

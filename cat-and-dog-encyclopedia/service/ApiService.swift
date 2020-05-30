@@ -8,38 +8,40 @@
 import FirebaseFirestore
 import Foundation
 import RxCocoa
+import Firebase
+import CodableFirebase
+
 
 class ApiService{
     
-    private let db = Firestore.firestore()
-    let dogs: BehaviorRelay<[Dog]> = BehaviorRelay(value: [])
-    let cats: BehaviorRelay<[Cat]> = BehaviorRelay(value: [])
+    private static let db = Firestore.firestore()
+    static var listDogs : [Dog] = []
+    static var listCats : [Cat] = []
     
-    
-    
-    private func loadDataListDog(){
+    static func loadDataListDog(){
         self.db.collection("dogs").getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
                 for document in querySnapshot!.documents {
-                    self.dogs.value(document)
-                    print("\(document.documentID) => \(document.data())")
+                    let dog = try! FirestoreDecoder().decode(Dog.self, from: document.data())
+                    self.listDogs.append(dog)
                 }
             }
         }
     }
     
-    private func loadDataListCat(){
+    static func loadDataListCat(){
         self.db.collection("cats").getDocuments() { (querySnapshot, err) in
-                if let err = err {
-                    print("Error getting documents: \(err)")
-                } else {
-                    for document in querySnapshot!.documents {
-                        print("\(document.documentID) => \(document.data())")
-                    }
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    let cat = try! FirestoreDecoder().decode(Cat.self, from: document.data())
+                    self.listCats.append(cat)
                 }
             }
+        }
     }
     
     

@@ -36,6 +36,7 @@
                                                 <state key="normal" image="cat_icon" backgroundImage="cat_icon"/>
                                                 <connections>
                                                     <action selector="catButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o1T-W0-Yzt"/>
+                                                    <segue destination="cx7-Fp-VpF" kind="show" id="4ma-Y4-8At"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyD-Yb-fYj">
@@ -44,6 +45,7 @@
                                                 <state key="normal" image="dog_icon" backgroundImage="dog_icon"/>
                                                 <connections>
                                                     <action selector="dogButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Chd-Zf-oas"/>
+                                                    <segue destination="cx7-Fp-VpF" kind="show" id="6qO-vV-IJy"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -91,22 +93,22 @@
             <objects>
                 <viewController id="cx7-Fp-VpF" customClass="ListViewController" customModule="cat_and_dog_encyclopedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D1S-Og-qCy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" backIndicatorImage="arrow.left" catalog="system" backIndicatorTransitionMaskImage="arrow.left" translatesAutoresizingMaskIntoConstraints="NO" id="Mwe-ou-SIl">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                 <items>
                                     <navigationItem title="List Dog / Cat" leftItemsSupplementBackButton="YES" id="nRY-s6-5hh"/>
                                 </items>
                             </navigationBar>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="64Q-YL-gry">
-                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="56"/>
                                 <color key="barTintColor" red="0.75377941131591797" green="0.93892592191696167" blue="0.93759721517562866" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gVZ-am-iir">
-                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <rect key="frame" x="0.0" y="112" width="414" height="696"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="sectionIndexBackgroundColor" red="0.75377941131591797" green="0.93892592191696167" blue="0.93759721517562866" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -263,4 +265,7 @@
         <image name="cat_icon" width="1753" height="1737"/>
         <image name="dog_icon" width="1752" height="1737"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6qO-vV-IJy"/>
+    </inferredMetricsTieBreakers>
 </document>

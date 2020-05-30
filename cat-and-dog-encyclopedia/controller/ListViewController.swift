@@ -8,30 +8,35 @@
 
 import UIKit
 import Firebase
+import RxSwift
+import RxCocoa
 
 class ListViewController: UIViewController {
-
+    
+    let listOfDogs = Observable.just(ApiService.listDogs)
+    private let disposeBag = DisposeBag()
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var listTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.loadDataDog()
+        self.setupDogCellConfiguration()
         // Do any additional setup after loading the view.
     }
     
-    func loadDataDog(){
-
+    func setupDogCellConfiguration(){
+        self.listOfDogs.bind(to: self.listTableView
+            .rx
+            .items(cellIdentifier: ListViewCell.cellIdentifier,
+                   cellType: ListViewCell.self)){
+                    row, dog, cell in
+                    
+                    cell.animalName.text = dog.name
+                    
+        }.disposed(by: disposeBag)
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+
+

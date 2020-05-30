@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Cat{
+struct Cat : Codable{
     let about : String
     let care : String
     let environment : String
